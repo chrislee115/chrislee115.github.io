@@ -35,6 +35,7 @@ header .row {
     padding-bottom:0;
 }
 #project-nav { 
+	padding-top: 15px;
 	text-align: center;
 }
 #project-nav li{
@@ -44,7 +45,7 @@ header .row {
 }
 #project-nav a{
 	font-family:proxima-nova-1,proxima-nova-2,'Proxima Nova',sans-serif;
-	color: blue;
+	color: #333;
 	display: inline-block;
 	padding-right: .2em;
 }
@@ -262,7 +263,10 @@ h3 {
   background: #3B5998;
   color: white;
 }
-
+.fa-linkedin {
+	background: #3B5998;
+	color: white;
+}  
 .fa-instagram {
 	background: palevioletred;
 	color: white;
@@ -300,7 +304,7 @@ html, body {
 #projects {
 	background: rgb(201, 241, 252);
 	padding-top: 70px;
-	height: 230%;
+	height: 240%;
 }
 #contact {
 	color: white;
@@ -331,5 +335,8 @@ html, body {
 ul {
 	list-style-type: none;
 	margin: 0;
-	padding: 0;
-  }
+	padding: 0;  
+}
+.return {
+	color: #333;
+}

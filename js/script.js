@@ -12,7 +12,11 @@ $(document).ready(function () {
         // event.preventDefault();
         $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 1000);
     });
-
+    $("a.modifiedScrollLink").click(function (event) {
+        // im not entirely sure what this line is doing
+        // event.preventDefault();
+        $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top - 90}, 1000);
+    });
     //changing the header background color
     // function changeHeader() {
     //     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
