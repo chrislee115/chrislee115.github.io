@@ -17,24 +17,7 @@ $(document).ready(function () {
         // event.preventDefault();
         $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top - 90}, 1000);
     });
-    //changing the header background color
-    // function changeHeader() {
-    //     var scrollTop = document.documentElement.scrollTop || document.body.scrollTop;
-    //     console.log(scrollTop)
-	// 	header.classList.toggle("header-background", scrollTop >= 50);
-	// }
 
-    // $(window).scroll(function () {
-    //     changeHeader();
-    // });
-    
-    // changeHeader();
-
-    //the form submit
-    $('#submit-form').on('click', function(e) {
-        var jqxhr = $.get(url + $('#user_email').val());
-        $('#user_email').val("");
-    });
 });
 
 // changes the header underline/url hash when the section is scrolled over

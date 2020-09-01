@@ -94,14 +94,7 @@ header a {
 	display:block;
 	width: 75%;
 }
-.brother-container {
-	margin: 0;
-	padding:0;
-	padding-top: 20px;
-	width: 20%;
-	display: inline-block;
-	text-align: center;
-}
+
 #logo {
     width: 58px;
     height: auto;
