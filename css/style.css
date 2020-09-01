@@ -34,7 +34,20 @@ header .row {
 	padding-top:0;
     padding-bottom:0;
 }
-
+#project-nav { 
+	text-align: center;
+}
+#project-nav li{
+	font-family:proxima-nova-1,proxima-nova-2,'Proxima Nova',sans-serif;
+	display: inline-block;
+	padding-right: .2em;
+}
+#project-nav a{
+	font-family:proxima-nova-1,proxima-nova-2,'Proxima Nova',sans-serif;
+	color: blue;
+	display: inline-block;
+	padding-right: .2em;
+}
 header a {
 	font-family:proxima-nova-1,proxima-nova-2,'Proxima Nova',sans-serif;
     font-weight:700;
@@ -67,11 +80,18 @@ header a {
 
 }
 .pic-container {
-	margin: 0;
+	margin: auto;
 	padding:0;
 	width: 50%;
 	display: inline-block;
 	text-align: center;
+}
+.pic-container.small {
+	width: 25%;
+}
+.pic-container.large {
+	display:block;
+	width: 75%;
 }
 .brother-container {
 	margin: 0;
@@ -125,8 +145,26 @@ p {
 	font-weight: 300;
 	font-size: 15px;
 }
-.hobby-pic {
+.hobby-group-pic {
 	width:90%; 
+	height: auto;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 30px;
+	border-radius: 20px;
+    border: 5px solid white;
+}
+.hobby-pic {
+	width:100%; 
+	height: auto;
+    display:block;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 30px;
+}
+.project-pic {
+	width:100%; 
 	height: auto;
     display:block;
     margin-left:auto;
@@ -193,6 +231,9 @@ h3 {
 #about-me-text {
 	text-indent: 20px;
 }
+.project-text {
+	font-size: 17px;
+}
 .centered {
 	text-align: center;
 }
@@ -250,24 +291,23 @@ html, body {
 }
 
 #about {
-	height:200%;
+	height:150%;
 	font-size: 0;
 	padding-top: 70px;
 	padding-bottom: 85px;
 	background: rgba(54, 186, 221);
 }
-#howcanijoin {
+#projects {
 	background: rgb(201, 241, 252);
-	height: 40%;
-	padding-top:0;
-	margin-top:0;
+	padding-top: 70px;
+	height: 230%;
 }
 #contact {
 	color: white;
 	background: hsl(200, 4%, 15%);
 	padding: auto;
 	text-align: center;
-	height: 43%;
+	height: calc(100% - 85px);
 	padding-top:0;
 }
 .vertical-center {
@@ -288,3 +328,8 @@ html, body {
 .idk {
 	width: 67%;
 }
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  }
