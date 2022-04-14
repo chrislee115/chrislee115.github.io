@@ -1,183 +1,480 @@
-<!DOCTYPE html>
-<html>
-    <!-- TODO: combine how can I join/contact page so it takes up a whole page -->
-    <!-- TODO: clean up contact page -->
-    <!-- TODO: add blurbs -->
-    <!-- TODO: agree on funktion text logo over home page -->
-    <!-- TODO: agree on text font -->
-    <!-- TODO: figure out what an archive does -->
-    <!-- TODO: add style to the text (bold, italicize, coloring, font); make it less stale -->
-    <head>
-        <meta charset="utf-8">
-        <title>Chris Lee's Website!</title>
-        <meta name="viewport">
-        <script type="text/javascript" src="js/jquery-3.5.1.js"></script>
-        <script src="js/script.js"></script>
-        <link rel="stylesheet" href="css/style.css">
-        <!-- fonts -->
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald&display=swap">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;300;400;500;700;900&display=swap">
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap">
-        <!-- social media icons -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    </head>
-    <body>
-        <header id="mainHeader">
-            <div class="row">
-                <ul class="list-reset">
-                    <li class="selected"><a class="scrollLink" href="#home">Home</a></li>
-                    <li><a class="scrollLink" href="#about">About Me</a></li>
-                    <li><a class="scrollLink" href="#projects">Projects</a></li>
-                    <li><a class="scrollLink" href="#contact">Contact</a></li>
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Chris Lee's Website</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- <link rel="manifest" href="site.webmanifest"> -->
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- CSS here -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/themify-icons.css">
+    <link rel="stylesheet" href="css/nice-select.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/gijgo.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slicknav.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- header-start -->
+    <header>
+        <div class="header-area ">
+            <div id="sticky-header" class="main-header-area">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-xl-3 col-lg-2">
+                            <div class="logo">
+                                <a href="index.html">
+                                    <img src="img/logo.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-7">
+                            <div class="main-menu  d-none d-lg-block">
+                                <nav>
+                                    <ul id="navigation">
+                                        <li><a class="active" href="#home" class="scrollLink">home</a></li>
+                                        <li><a href="#about" class="scrollLinkAbout">About</a></li>
+                                        <li><a href="#portfolio" class="scrollLinkPortfolio">Portfolio</a></li>
+                                        <!-- 
+                                        <li><a href="services.html">Services</a></li>
+                                            <li><a href="#">blog <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                <li><a href="blog.html">blog</a></li>
+                                                <li><a href="single-blog.html">single-blog</a></li>
+                                            </ul>
+                                        </li>
+                                        <li><a href="#">pages <i class="ti-angle-down"></i></a>
+                                            <ul class="submenu">
+                                                 <li><a href="portfolio.html">Portfolio</a></li>
+                                                 <li><a href="elements.html">elements</a></li>
+                                            </ul>
+                                        </li> -->
+                                        <li><a href="#contact" class="scrollLink">Contact</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-3 d-none d-lg-block">
+                            <div class="Appointment">
+                                <div class="book_btn d-none d-lg-block">
+                                    <a  href="mailto:chrisree@umich.edu">Contact Me</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="mobile_menu d-block d-lg-none"></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- header-end -->
+
+    <!-- slider_area_start -->
+    <div id="home" class="slider_area">
+        <div class="single_slider  d-flex align-items-center slider_bg_1">
+            <div class="shap_pattern d-none d-lg-block">
+                <img src="img/about/grid.png" alt="">
+            </div>
+            <div class="social_links">
+                <ul>
+                    <li><a target="_blank" href="https://www.facebook.com/cylee115/"> <i class="fa fa-facebook"></i> </a></li>
+                    <li><a target="_blank" href="https://www.instagram.com/chrislee115/"> <i class="fa fa-instagram"></i> </a></li>
+                    <li><a target="_blank" href="https://www.linkedin.com/in/chrislee115/"> <i class="fa fa-linkedin"></i> </a></li>
+                    <li><a target="_blank" href="https://github.com/chrislee115"> <i class="fa fa-github"></i> </a></li>
                 </ul>
             </div>
-        </header>
-
-        <section id="home" class="container" style="font-size:0">
-            <img id="home-pic" src="images/me.png">
-            <div id="home-text">
-                <h2>Hi! My name is</h2>
-                <h1 class="underlined">Chris Lee</h1>
-                <h2>University of Michigan Class of 2022<br>B.S. in Computer Science</h2>
-            </div>
-        </section>
-
-        <section id="about" class="container">
-            <div class="text-block">
-                <h1>About Me</h1>
-                <h3 class="about-me-text">I was born in Troy, MI and went to Warren Consolidated Schools. Then right after 6th grade, we moved far - to the other side of Troy, MI, where I went to Troy School District. Somewhere along the way, I picked up a strong fascination with computer science (probably because I thought computer science = gaming), and I've carried that passion for the field ever since.
-                    <br><br>
-                    In high school, I tried to push myself to learn cybersecurity through various CTFs and websites or learn programming through Codeacademy but I couldn't find the motivation to keep going when I couldn't figure something out - no one else around me had any knowledge in the field (I've become much better at Googling problems since then). Because of this ordeal, it became a really easy decision to enroll at the Univesity of Michigan to study Computer Science.
-                    <br><br>
-                    My time here at UM has been wonderful thus far - programming is now a way for me to create products that can provide actual benefit to people as opposed to a "hello world" hat trick, I am now understanding all different stacks of technology and how I can apply them to future projects instead of tunneling on trying to create the next Flappy Bird, and most importantly, I now know how to code websites as opposed to inspecting element on various pages and changing text to "butt."  
-                    <br><br>
-                    Wherever the road takes me, I hope theres good food and tea. 
-                </h3>
-            </div>
-            <div class="text-block">
-                <h3 class="sub-title"><br>Clubs</h2>
-                <div class="pic-container">
-                    <img class="hobby-group-pic" src="images/funktion.png"/>
-                    <p class="caption">I'm a dancer on UM's FunKtion dance team!
-                        <br>I also coded our <a href="https://umfunktion.org" target="_blank">website.</a>
-                    </p>
-                </div>
-                <div class="pic-container">
-                    <img class="hobby-group-pic" src="images/ktp.png"/>
-                    <p class="caption">I'm a member of <a href="https://kappathetapi.com/">KTP</a>,
-                    <br>UM's premier technology fraternity.</p>
-                </div>
-                <h3 class="sub-title"><br>Some other things I do in my free time...</h2>
-                <div class="pic-container small">
-                    <img class="hobby-pic" src="images/tennis.png"/>
-                </div>
-                <div class="pic-container small">
-                    <img class="hobby-pic" src="images/guitar.png"/>
-                </div>
-                <div class="pic-container small">
-                    <img class="hobby-pic" src="images/bike.png"/>
-                </div>
-                <div class="pic-container small">
-                    <img class="hobby-pic" src="images/tea2.jpg"/>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-12">
+                        <div class="slider_text text-center">
+                            <h3>
+                                Hi! I'm Chris
+                            </h3>
+                            <span>Software Engineer</span>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-        <div id="contact-container">
-            <section id="projects" class="container">
-                <h1 class="centered">Projects</h1>
-                <div id="project-nav" class="row">
-                    <ul class="list-reset">
-                        <li><a class="modifiedScrollLink" href="#metroid">EECS 494 P1 Metroid</a></li>
-                        <li><a class="modifiedScrollLink" href="#p2">EECS 494 P2</a></li>
-                        <li><a class="modifiedScrollLink" href="#course-planner">UM Course Planner</a></li>
-                        <li><a class="modifiedScrollLink" href="#funktion-site">FunKtion Website</a></li>
-                        <li><a class="modifiedScrollLink" href="#bus-notifier">MBus Notifier</a></li>
-                        <li><a class="modifiedScrollLink" href="#smart-display">Smart Mirror</a></li>
-                    </ul>
-                </div>
-                <div id="metroid" class="pic-container large">
-                    <h3 class="sub-title">EECS 494 P1 Metroid</h3>
-                    <h3>Winter 2022</h3>
-                    <h3 class="project-text">For EECS 494 Project 1, my partner and I worked to recreate NES Metroid in Unity! We also implemented a custom level and mechanic that is novel to the Metroid series in attempts to change how the game is made. <br>
-                        <a href="MetroidMac.zip">Download Mac Version</a> <br>
-                        <a href="MetroidWindows.zip">Download Windows Version</a><br>
-                    <a class="modifiedScrollLink return" href="#project-nav">Back to Projects Top</a><br><br>
-                    </h3>
-                </div>
-                <div id="metroid" class="pic-container large">
-                    <h3 class="sub-title">EECS 494 P2</h3>
-                    <h3>Winter 2022</h3>
-                    <h3 class="project-text">For EECS 494 Project 2, I worked alone to create a rapid prototype of a puzzle platformer that takes inspiration from Celeste, Modern Sonic series, and Spectre of Torment!<br>
-                        <a href="p2_gold_webgl/index.html">Web Build</a> <br>
-                    <a class="modifiedScrollLink return" href="#project-nav">Back to Projects Top</a><br><br>
-                    </h3>
-                </div>
-                <div id="course-planner" class="pic-container large">
-                    <h3 class="sub-title">UM Course Planner</h3>
-                    <h3>In Progress</h3>
-                    <h3 class="project-text">I recently decided to pursue a double major in Computer Science and Data Science, so I was figuring out which requirements I needed to graduate and I found the process to be rather tedious. I would have to open an excel sheet and like fifty tabs to look up major requirements, what types of credits a course gave, course ratings, etc. So I started working on a course planner with a good friend of mine to try to package all these things into a website!<br><br>
-                    To use it, a user would download their transcript and upload it to our site so we can analyze which credits have been completed. Then the user selects a major and is able to look up and add courses that will satisfy their major requirements to their college plan. We're writing this in Python, using Django framework for the site, Selenium for scraping course information, and Poppler for converting the transcripts.<br>
-                    <a class="modifiedScrollLink return" href="#project-nav">Back to Projects Top</a><br><br>
-                    </h3>
-                </div>
-                <div id="funktion-site" class="pic-container large">
-                    <h3 class="sub-title"><a href="https://umfunktion.org" target="_blank">FunKtion Website</a></h3>
-                    <h3>COVID Summer Aug 2020</h3>
-                    <h3 class="project-text">
-                        At the beginning of the year, we have a festival in the fall - Festifall - where student orgs try to woo other students to join their organizations. With Festifall going virtual due to the lovely COVID, I wanted to help keep FunKtion's spirit alive so I attempted to revamp our website! (not sure where the old one went tbh)
-                        <br><br>
-                        A group of ~5 other members wanted to help out as well, so I broke them up into different aspects of website creation - design/programming/hosting. and we cranked out the website in about a month's time! <br>
-                        <a class="modifiedScrollLink return" href="#project-nav">Back to Projects Top</a>
-                        <br><br>
-                    </h3>
-                </div>
-                <div id="bus-notifier" class="pic-container large">
-                    <h3 class="sub-title">MBus Notifier (Paused due to COVID)</h3>
-                    <h3>Jan - Mar 2020</h3>
-                    <h3 class="project-text">
-                        Many people complain about the bus app that the university provides (i.e. complaints about ui/buses disappear), so I tried to create an app that would attempt to alleviate some of these problems and add additional features (particularly for android users).
-                        <br><br>
-                        At the time, I recently switched to a Pixel 3 (dropped the iPhone in a river oops). I really liked the control center at the top and noticed that 3rd party apps can also add their own icons. 
-                        I tried to run with this idea - when you clicked the MBus Notifier icon, it would begin looking at a users location and inform the user of nearby bus stops/incoming buses. A user would have been able to filter out buses or favorite buses so they could get a notification when their bus is almost arriving.
-                        <br><br>
-                        Unfortunately, while I was developing the app, COVID began to break out and everything started switching to their virtual counterparts, so I decided to put this project on hold until public transportation becomes a safe and viable option.<br>
-                        <a class="modifiedScrollLink return" href="#project-nav">Back to Projects Top</a>
-                        <br><br>
-                    </h3>
-                </div>
-                <div id="smart-display" class="pic-container large">
-                    <h3 class="sub-title">Smart Display</h3>
-                    <h3>Freshman Year Summer 2019</h3>
-                    <img class="project-pic" src="images/smart-display.jpg"/>
-                    <h3 class="project-text">This is a smart "mirror" I made on a Raspberry Pi 3 B+. To use it, I would turn on the Raspberry Pi when I wake up, then go brush my teeth or something while the Pi boots up (~40 sec). When I come back, I can see what I have to do for the day! I used Google Calendar, OpenWeathermap, Spotify (not pictured) to show current/upcoming events, weather, and the song title/artist that was playing from my Spotify at the time!<br><br> I had no idea where to begin, so I figured I would learn from example - I cloned some guy's git repo and looked at how the pieces came together. The concept was basic enough, but his code was <i>interesting</i>, to say the least, so I rewrote the whole thing. It's still quite poorly written as I didn't quite package it up nicely, but oh well, live and learn.<br>
-                    <a class="modifiedScrollLink return" href="#project-nav">Back to Projects Top</a></h3>
-                </div>
-            </section>
-
-
-            <section id="contact" class="container">
-                <div class="center">
-                    <h1>Let's Connect!</h2>
-                    <br>
-                    <p class="contact-link">Facebook: @cylee115</p>
-                    <br>
-                    <p class="contact-link">Instagram: @chrislee115</p>
-                    <br>
-                    <p class="contact-link">Email: chrisree@umich.edu</p>
-                    <br>
-                    <p class="contact-link">LinkedIn: in/chrislee115</p>
-                    <br>
-                    <p class="contact-link">GitHub: @chrislee115</p>
-                    <br>
-                    <p class="contact-link">My <a href="images/ChrisLeeResumeFull.pdf" download style="color: white">Resume</a></p>
-                    <br>
-                    <a href="https://www.facebook.com/cylee115/" target="_blank" class="fa fa-facebook"></a>
-                    <a href="https://www.instagram.com/chrislee115/?hl=en" target="_blank" class="fa fa-instagram"></a>
-                    <a href="mailto: chrisree@umich.edu" target="_blank" class="fa fa-envelope"></a>
-                    <a href="https://www.linkedin.com/in/chrislee115/" target="_blank" class="fa fa-linkedin"></a>
-                    <a href="https://github.com/chrislee115/" target="_blank" class="fa fa-github"></a>
-                </div>
-            </section>
         </div>
-    </body>
+    </div>
+    <!-- slider_area_end -->
+
+    <!-- service_area  -->
+    <!-- <div class="service_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title text-center mb-65">
+                        <span>Service Provided</span>
+                        <h3>Build brands campaigns  <br>
+                                & digital projects</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_service text-center">
+                        <div class="icon">
+                            <img src="img/svg_icon/1.svg" alt="">
+                        </div>
+                        <h3>Graphic design</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_service text-center">
+                        <div class="icon">
+                            <img src="img/svg_icon/2.svg" alt="">
+                        </div>
+                        <h3>Web design</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_service text-center">
+                        <div class="icon">
+                            <img src="img/svg_icon/3.svg" alt="">
+                        </div>
+                        <h3>Mobile app</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!--/ service_area  -->
+
+    <!-- portfolio_area -->
+    <div id="portfolio" class="portfolio_area portfolio_bg_1">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="section_title white_text text-center">
+                        <span>Portfolio</span>
+                        <h3>Projects & Fun Things
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ portfolio_area -->
+
+    <!-- portfolio_image_area  -->
+    <div class="portfolio_image_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-5 col-md-5">
+                    <div class="single_Portfolio">
+                        <div class="portfolio_thumb">
+                            <img src="img/portfolio/smart-display.png" alt="">
+                        </div>
+                        <a href="img/portfolio/smart-display.png" class="popup popup-image" title="A smart display I made from scratch" link="https://github.com/chrislee115/smart-mirror"></a>
+                        <div class="portfolio_hover">
+                            <div class="title">
+                                    <h3>Smart Display</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-7 col-md-7">
+                    <div class="single_Portfolio">
+                        <div class="portfolio_thumb">
+                            <img src="img/portfolio/soulime.png" alt="">
+                        </div>
+                        <a href="img/portfolio/soulime.png" class="popup popup-image" title="A 2D Action Adventure Game I made for EECS 494" link=""></a>
+                        <div class="portfolio_hover">
+                            <div class="title">
+                                    <h3>Soulime Game</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single_Portfolio">
+                        <div class="portfolio_thumb">
+                            <img src="img/portfolio/funktion.png" alt="">
+                        </div>
+                        <a href="img/portfolio/funktion.png" class="popup popup-image" title="FunKtion on three!" link="http://umfunktion.org/"></a>
+                        <div class="portfolio_hover">
+                            <div class="title">
+                                    <h3>FunKtion Dance</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-6 col-lg-4">
+                    <div class="single_Portfolio">
+                        <div class="portfolio_thumb">
+                            <img src="img/portfolio/ktp.png" alt="">
+                        </div>
+                        <a href="img/portfolio/ktp.png" class="popup popup-image" title="UMich's Premier Technology Fraternity" link="http://kappathetapi.com/"></a>
+                        <div class="portfolio_hover">
+                            <div class="title">
+                                    <h3>KTP Tech Fraternity</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-12 col-lg-4">
+                    <div class="single_Portfolio">
+                        <div class="portfolio_thumb">
+                            <img src="img/portfolio/cpf.png" alt="">
+                        </div>
+                        <a href="img/portfolio/cpf.png" class="popup popup-image" title="I worked at CPF during my Amazon Internship" link="https://www.amazon.com/b?ie=UTF8&node=21221607011"></a>
+                        <div class="portfolio_hover">
+                            <div class="title">
+                                    <h3>Climate Pledge Friendly</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="more_portfolio text-center">
+                        <a class="line_btn" target="_blank" href="portfolio.html">All Projects</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ portfolio_image_area  -->
+
+    <!-- about_me  -->
+    <div id="about" class="about_me">
+        <div class="about_large_title d-none d-lg-block">
+                About
+        </div>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-xl-6 col-md-6">
+                    <div class="about_e_details">
+                        <h3>About me</h3>
+                        <p>I look to be an open minded individual that is trying to take on the world's problems and make a positive impact!<br> <br>
+                        I received a Dual Bachelor of Science Degree in Computer Science and Data Science at the University of Michigan (Class of 2022),
+                        and am primarily focusing on software engineering.</p>
+                        <div class="download_cv">
+                            <!-- TODO: include cv here -->
+                            <a class="boxed-btn3" href="ChrisLeeResumeFull.pdf" download>Download CV</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6 col-md-6">
+                    <div class="about_img">
+                        <div class="color_pattern d-none d-lg-block">
+                            <img src="img/about/color_grid.png" alt="">
+                        </div>
+                        <div class="my_Pic">
+                                <img src="img/about/about.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/ about_me  -->
+
+    <!-- <div class="counter_area">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_counter text-center">
+                        <h3>
+                            <span class="counter" >520 </span><span>+</span>
+                        </h3>
+                        <p>Total Projects</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_counter text-center">
+                        <h3>
+                            <span class="counter">244 </span>
+                        </h3>
+                        <p>On Going Projects</p>
+                    </div>
+                </div>
+                <div class="col-xl-4 col-md-4">
+                    <div class="single_counter text-center">
+                        <h3>
+                            <span class="counter" >95 </span> <span>%</span>
+                        </h3>
+                        <p>Job Success</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <!-- testimonial_area  -->
+    <!-- TODO: add favorite quotes here probably -->
+    <div class="testimonial_area ">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="testmonial_active owl-carousel">
+                            <div class="single_carousel">
+                                    <div class="single_testmonial text-center">
+                                            <div class="quote">
+                                                <img src="img/testmonial/quote.svg" alt="">
+                                            </div>
+                                            <p>What you do makes a difference, and you have to decide what kind of difference you want to make. </p>
+                                            <div class="testmonial_author">
+                                                <!-- <div class="thumb">
+                                                        <img src="img/testmonial/thumb.png" alt="">
+                                                </div> -->
+                                                <h3>Jane Goodall</h3>
+                                                <!-- <span>Business Owner</span> -->
+                                            </div>
+                                        </div>
+                            </div>
+                            <!-- <div class="single_carousel">
+                                    <div class="single_testmonial text-center">
+                                            <div class="quote">
+                                                <img src="img/testmonial/quote.svg" alt="">
+                                            </div>
+                                            <p>Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor <br> 
+                                                    sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed neque.  <br>
+                                                    Fusce ac mattis nulla. Morbi eget ornare dui. </p>
+                                            <div class="testmonial_author">
+                                                <div class="thumb">
+                                                        <img src="img/testmonial/thumb.png" alt="">
+                                                </div>
+                                                <h3>Robert Thomson</h3>
+                                                <span>Business Owner</span>
+                                            </div>
+                                        </div>
+                            </div>
+                            <div class="single_carousel">
+                                    <div class="single_testmonial text-center">
+                                            <div class="quote">
+                                                <img src="img/testmonial/quote.svg" alt="">
+                                            </div>
+                                            <p>Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor <br> 
+                                                    sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed neque.  <br>
+                                                    Fusce ac mattis nulla. Morbi eget ornare dui. </p>
+                                            <div class="testmonial_author">
+                                                <div class="thumb">
+                                                        <img src="img/testmonial/thumb.png" alt="">
+                                                </div>
+                                                <h3>Robert Thomson</h3>
+                                                <span>Business Owner</span>
+                                            </div>
+                                        </div>
+                            </div> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- /testimonial_area  -->
+    
+    <div id="contact" class="discuss_projects">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-12">
+                    <div class="project_text text-center">
+                        <h3>Let’s work together :)</h3><br>
+                        <!-- <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor <br> incididunt ut labore et dolore magna aliqua.</p> -->
+                        <a class="boxed-btn3" href="mailto:chrisree@umich.edu">Start Talking</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer start -->
+    <footer class="footer">
+        <div class="footer_top">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-xl-6 col-md-6">
+                        <div class="menu_links">
+                            <ul>
+                                <li><a href="#">About</a></li>
+                                <!-- <li><a href="#">Services</a></li> -->
+                                <li><a href="#">Portfolio</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-md-6">
+                        <div class="socail_links">
+                            <ul>
+
+                                <li><a target="_blank" href="https://www.facebook.com/cylee115/"> <i class="fa fa-facebook"></i> </a></li>
+                                <li><a target="_blank" href="https://www.instagram.com/chrislee115/"> <i class="fa fa-instagram"></i> </a></li>
+                                <li><a target="_blank" href="https://www.linkedin.com/in/chrislee115/"> <i class="fa fa-linkedin"></i> </a></li>
+                                <li><a target="_blank" href="https://github.com/chrislee115"> <i class="fa fa-github"></i> </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right_text">
+            <div class="container">
+                <div class="footer_border"></div>
+                <div class="row">
+                    <div class="col-xl-12">
+                        <p class="copy_right text-center">
+                            <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--/ footer end  -->
+
+    <!-- JS here -->
+    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/ajax-form.js"></script>
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+    <script src="js/imagesloaded.pkgd.min.js"></script>
+    <script src="js/scrollIt.js"></script>
+    <script src="js/jquery.scrollUp.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/nice-select.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/gijgo.min.js"></script>
+
+    <!--contact js-->
+    <script src="js/contact.js"></script>
+    <script src="js/jquery.ajaxchimp.min.js"></script>
+    <script src="js/jquery.form.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/mail-script.js"></script>
+
+    <script src="js/main.js"></script>
+</body>
+
 </html>
